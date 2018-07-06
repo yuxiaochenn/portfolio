@@ -60,6 +60,7 @@ a:hover {
 
  h4 {
    font-size: 15pt;
+   line-height: 1.6;
  }
 
  b {
@@ -304,6 +305,7 @@ a:visited, a:focus {
 
   h4 {
     font-size: 13pt;
+    line-height: 1.5;
   }
 
   html,body {
