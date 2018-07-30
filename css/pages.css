@@ -34,6 +34,7 @@ a:hover {
    font-family: "Montserrat", sans-serif;
    font-weight: 300;
    font-size: 45pt;
+   line-height: 1.3;
  }
 
  h2 {
@@ -47,7 +48,7 @@ a:hover {
    font-weight: 300i;
  }
 
- .centered-h3 {
+ .centered-h3, .centered-h4{
    font-weight: 400;
    text-align: center;
  }
@@ -291,6 +292,7 @@ a:visited, a:focus {
 @media (max-width: 768px) {
   h1 {
     font-size: 33pt;
+    line-height: 1.5;
   }
 
   h2 {
@@ -359,4 +361,16 @@ a:visited, a:focus {
   #process-btn {
     font-size: 14pt;
   }
+}
+
+/*Spotify*/
+@media (max-width: 768px) {
+  #invision-spotify {
+    display: none;
+  }
+}
+
+/*Veggiezens*/
+.quote {
+  font-style: italic;
 }
