@@ -327,6 +327,10 @@ a:visited, a:focus {
   .right, .left {
     float: none;
   }
+
+  .fa {
+    width: 50px;
+  }
 }
 
 /*REI FIT page*/

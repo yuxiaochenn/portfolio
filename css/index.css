@@ -258,3 +258,9 @@ a:visited, a:focus {
     display: grid;
   }
 }
+
+@media (max-width: 376px) {
+  .fa {
+    width: 50px;
+  }
+}
