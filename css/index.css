@@ -1,15 +1,15 @@
 html,body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: 400;
   line-height: 1.6;
-  font-style: normal;
+  color: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
-}
+ }
 
 a {
   text-decoration: none;
@@ -17,6 +17,11 @@ a {
 
 a:hover {
  text-decoration: none;
+}
+
+a:visited, a:focus {
+  text-decoration: none;
+  color: #909090;
 }
 
  /*Nav bar style*/
@@ -72,22 +77,6 @@ a:hover {
   text-align: center;
 }
 
-/*wrap*/
-
-#wrap {
-  padding-top: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#grids-wrap {
-  padding: 3%;
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-}
-
 .navbar-default {
   background-color: white;
 }
@@ -126,15 +115,22 @@ a:hover {
   font-weight: 700;
 }
 
-/* Grids style & figcaption*/
-.show {
-  padding-left: 0px;
-  padding-right: 0px;
+/*wrap*/
+#wrap {
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.show figcaption:hover {
-  background-color: white;
+#grids-wrap {
+  padding: 3%;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
 }
+
+/* Grids style & figcaption*/
 
 figure>img {
   padding: 2%;
@@ -151,10 +147,10 @@ figure:hover figcaption {
 figcaption {
   height: 100%;
   width: 100%;
-  top:auto;
   bottom: 0;
   opacity: 0;
   padding: 5%;
+  padding-top: 17%;
   position: absolute;
   text-decoration: none;
 }
@@ -170,18 +166,44 @@ figcaption:hover {
 }
 
 figcaption h4 {
-  font-weight: 600;
-  color: rgba(101, 52, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35pt;
+  color: #181818;
+  text-align: center;
+}
+
+figcaption p {
+  color: #181818;
+  text-align: center;
+}
+
+section h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20pt;
+  color: #181818;
+}
+
+.show {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.show figcaption:hover {
+  background-color: white;
 }
 
 .show-later {
   padding: 8%;
+  padding-top: 0;
   display: none;
 }
+
 /* Footer style*/
 .footer {
   padding-top: 6%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 
 .footer p {
@@ -193,10 +215,6 @@ figcaption h4 {
   padding-bottom: 3%;
   margin-bottom: 0;
   text-align: center;
-}
-
-#abt-page {
-  color: rgb(101, 52, 255);
 }
 
 /*Social media icons*/
@@ -222,29 +240,7 @@ figcaption h4 {
 }
 
 .fa{
-  color: grey;
-}
-
-a:visited, a:focus {
-  text-decoration: none;
-  color: grey;
-}
-
-/* #about */
-#about {
-  padding: 0;
-  padding-top: 7%;
-  padding-bottom: 7%;
-}
-
-#about .col {
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .navbar-default .navbar-brand  {
-    padding-top: 15px;
-  }
+  color: #909090;
 }
 
 @media (max-width: 1024px) {
@@ -254,13 +250,29 @@ a:visited, a:focus {
 }
 
 @media (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    padding-top: 15px;
+  }
+
   .show-later {
     display: grid;
+  }
+
+  figcaption {
+    display: none;
   }
 }
 
 @media (max-width: 376px) {
   .fa {
     width: 50px;
+  }
+
+  section h4 {
+    font-size: 15pt;
+  }
+
+  section p {
+    font-size: 11pt;
   }
 }
