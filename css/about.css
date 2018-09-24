@@ -1,15 +1,15 @@
 html,body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: 400;
   line-height: 1.6;
-  font-style: normal;
+  color: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
-}
+ }
 
 a {
   text-decoration: none;
@@ -17,6 +17,11 @@ a {
 
 a:hover {
  text-decoration: none;
+}
+
+a:visited, a:focus {
+  text-decoration: none;
+  color: #909090;
 }
 
  /*Nav bar style*/
@@ -72,22 +77,6 @@ a:hover {
   text-align: center;
 }
 
-/*wrap*/
-
-#wrap {
-  padding-top: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#grids-wrap {
-  padding: 3%;
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-}
-
 .navbar-default {
   background-color: white;
 }
@@ -126,62 +115,25 @@ a:hover {
   font-weight: 700;
 }
 
-/* Grids style & figcaption*/
-.show {
-  padding-left: 0px;
-  padding-right: 0px;
+/*wrap*/
+#wrap {
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.show figcaption:hover {
-  background-color: white;
+#grids-wrap {
+  padding: 3%;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
 }
 
-figure>img {
-  padding: 1px;
-}
-
-figure:hover figcaption {
-    transition: opacity 0.6s ease-in-out;
-    -webkit-transition: opacity 0.6s ease-in-out;
-    -moz-transition: opacity 0.6s ease-in-out;
-    -o-transition: opacity 0.6s ease-in-out;
-    -ms-transition: opacity 0.6s ease-in-out;
-}
-
-figcaption {
-  height: 100%;
-  width: 100%;
-  top:auto;
-  bottom: 0;
-  opacity: 0;
-  padding: 5%;
-  position: absolute;
-  text-decoration: none;
-}
-
-figcaption:hover {
-  background-size:cover;
-  opacity: .95;
-  transition: all, 1s, ease-in-out;
-  -webkit-transition: all, 1s, ease-in-out;
-	-moz-transition: all, 1s, ease-in-out;
-	-ms-transition: all, 1s, ease-in-out;
-	-o-transition: all, 1s, ease-in-out;
-}
-
-figcaption h4 {
-  font-weight: 600;
-  color: rgba(101, 52, 255, 1);
-}
-
-.show-later {
-  padding: 8%;
-  display: none;
-}
 /* Footer style*/
 .footer {
   padding-top: 6%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 
 .footer p {
@@ -195,21 +147,17 @@ figcaption h4 {
   text-align: center;
 }
 
-#abt-page {
-  color: rgb(101, 52, 255);
-}
-
 /*Social media icons*/
 #social-media {
   text-align: center;
 }
 
 #social-media a {
-  font-size: 70pt;
+  font-size: 18pt;
 }
 
 .fa {
-  padding: 100pt;
+  padding: 25px;
   width: 60px;
   text-align: center;
   text-decoration: none;
@@ -222,29 +170,64 @@ figcaption h4 {
 }
 
 .fa{
-  color: grey;
+  color: #909090;
 }
 
-a:visited, a:focus {
-  text-decoration: none;
-  color: grey;
+img {
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 10px;
 }
 
-/* #about */
-#about {
-  padding: 0;
-  padding-top: 7%;
-  padding-bottom: 7%;
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  line-height: 1.6;
 }
 
-#about .col {
-  padding: 0;
+/*top button*/
+
+.btn {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(101, 52, 255, .5);
+  transition: 0.3s;
+  border: none;
+  border-radius: 1000px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .navbar-default .navbar-brand  {
-    padding-top: 15px;
-  }
+.text-center h4{
+  font-size: 25pt;
+  color: rgb(101, 52, 255);
+}
+
+.text-center h4:hover {
+  color: #181818;
+}
+
+.text-center:visited, .text-center:focus {
+  color: rgba(101, 52, 255, 1);
+}
+
+.space {
+  margin-top: 20pt;
+  margin-bottom: 40pt;
+}
+
+
+.paragraphs {
+  margin-top: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -254,7 +237,17 @@ a:visited, a:focus {
 }
 
 @media (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    padding-top: 15px;
+  }
+
   .show-later {
     display: grid;
+  }
+}
+
+@media (max-width: 376px) {
+  .fa {
+    width: 50px;
   }
 }
