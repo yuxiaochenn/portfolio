@@ -409,22 +409,25 @@ a:visited, a:focus {
   #process-btn {
     font-size: 14pt;
   }
-}
 
-/*Spotify*/
-@media (max-width: 768px) {
-  #invision-spotify {
-    display: none;
-  }
+  /*wrap style*/
+ #wrap {
+   padding-top: 2%;
+   padding-left: 2%;
+   padding-right: 2%;
+ }
+
+ /* Grids style*/
+ .grids {
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+ }
 }
 
 /*Veggiezens*/
 .quote {
   font-style: italic;
   font-size: 13pt;
-}
-
-/*WOM*/
-.xd {
-  background-color: rgb(244, 244, 244);
 }

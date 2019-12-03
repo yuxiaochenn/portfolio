@@ -75,19 +75,19 @@ a:hover {
  }
 
  /*wrap style*/
-#wrap {
+ #wrap {
   padding-top: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
+  padding-left: 10%;
+  padding-right: 10%;
+ }
 
-/* Grids style*/
-.grids {
-  padding-left: 3%;
-  padding-right: 3%;
+ /* Grids style*/
+ .grids {
+  padding-left: 22%;
+  padding-right: 22%;
   padding-top: 2%;
   padding-bottom: 2%;
-}
+ }
 
 .section {
   padding-left: 0;
@@ -311,39 +311,24 @@ a:visited, a:focus {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 33pt;
-    line-height: 1.5;
+  #process-btn {
+    font-size: 14pt;
   }
 
-  h2 {
-    font-weight: 300;
-    font-size: 15pt;
-    line-height: 1.5;
-  }
+  /*wrap style*/
+ #wrap {
+   padding-top: 2%;
+   padding-left: 2%;
+   padding-right: 2%;
+ }
 
-  h3 {
-    font-size: 15pt;
-    line-height: 1.5;
-  }
-
-  h4 {
-    font-size: 13pt;
-    line-height: 1.5;
-  }
-
-  html,body {
-    font-size: 12pt;
-    line-height: 1.6;
-  }
-
-  .show-later {
-    display: block;
-  }
-
-  .hide-later {
-    display: none;
-  }
+ /* Grids style*/
+ .grids {
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+ }
 }
 
 @media (max-width: 376px) {
