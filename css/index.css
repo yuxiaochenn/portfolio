@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 html,body {
   overflow-x: hidden;
@@ -6,7 +6,7 @@ html,body {
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.8;
-  color: #181818;
+  color: rgba(0,0,0);
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -36,7 +36,7 @@ a:visited, a:focus {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: black;
+  background-color: rgba(0,0,0);
 }
 
 #menu {
@@ -87,7 +87,7 @@ a:visited, a:focus {
 }
 
 .navbar-default .navbar-brand {
-  color: rgba(0,0,0,.5);
+  color: rgba(0,0,0);
   transition: 0.3s;
 }
 
@@ -111,7 +111,13 @@ a:visited, a:focus {
 
 .navbar-brand {
   font-size: 25pt;
-  font-weight: 700;
+  font-weight: 600;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-weight: 700;
 }
 
 /*wrap*/
