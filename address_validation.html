@@ -49,67 +49,93 @@
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Overview</h3>
-          <p>As an ecommerce giant, Walmart.com adopts a robust delivery system as a pillar of success of the business. By leveraging address validation services (AVS), we are able to validate if the customer’s input matches an address on file, which has been an effective approach to avoid post-transaction frictions such as delivery delays or undelivered orders.
+          <p>As an ecommerce giant, Walmart.com adopts a robust delivery system as a pillar of the success of business. Leveraging address validation services (AVS), we are able to verify if an input from the customer matches an address on file. This has been an effective approach to avoid post-transaction frictions, such as delivery delays or undelivered orders.
           </p>
           <p></p>
           <img src="avs/box.jpg" class="img-responsive">
           <p></p>
-          <p>Back in early 2020, data indicated we still have wiggling room. We noticed 7% of adding address attempts resulted in an invalid input during checkout. With a noteworthy percentage of these invalidation implying on the limited capability of address database, we upgraded the license with improved address validation accuracy. To reach experience parity, I worked with the team to identify design opportunities to improve the address validation experience on Walmart.com.
+          <p>Back in early 2020, analytical data indicated we still have a wiggling room. We’ve noticed 7% of adding address attempts resulted in an invalid address during checkout. On top of that, a noteworthy percentage of these invalidations implies a limited capability of the AVS. On the business side, we decided to upgrade our AVS license to raise the bar. To reach an experience parity, I worked with the cross-functional team to identify design opportunities to improve the address validation experience on Walmart.com.</p>
           </p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h3>My role</h3>
-          <p>Paragraph</p>
+          <p>UI/UX designer</p>
+          <p>Drived design from ideation to iteration to final specs for all use cases</p>
         </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h3>Work partners</h3>
+          <p>Product Manager, Content Strategist, Design Researcher, team of Developers (iOS, Android, and Web), design support from design team</p>
+        </div>
+      </div>
+
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Scope & opportunity</h3>
-          <p>To wrap my head around the current address validation experience, I did a comprehensive audit of all use cases.</p>
+          <h3>Scope & prioritization</h3>
+          <p>I did a comprehensive audit of all use cases to better understand the scope of this project. I learned there are 4 types of address validation scenarios implemented on the current site, with 80% as return customers and 20% as guests. Design specification wise, all platforms need to be taken care of - responsive web, iOS, and Android.</p>
           <img src="avs/errors.jpg" class="img-responsive">
-          <p>Collaborated with product and engineer partners, I learned a tangible opportunity to leverage the upgraded AVS capability by prioritizing our design efforts on high confidence suggestion use case. Due to technical limitation, current validator can only surface out suggestions when there is an exact quantity of 2 on file. For the rest such as a singular suggestion scenario, they are off the table and buried with other low confidence suggestion cases. With more accurate address suggestions honored by the latest AVS upgrade, it’s a revamp of customer trust in their online shopping journey with Walmart.</p>
+          <p>Collaborated with product and engineer partners, I made a tangible plan to prioritize the design efforts on different use cases. Due to technical limitations, the outdated AVS can only surface out address suggestions when there are exactly 2 results on file. The rest, such as singular suggestion use cases, is buried in low confidence suggestion cases. With more accurate responses honored by the latest AVS, it’s a great opportunity to revamp a trustworthy customer experience with more solid and reliable address suggestions. Therefore, I decided to first dig into the use case with high confidence suggestions to maximize the opportunity for a customer experience 2.0.</p>
+          </p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Heuristics evaluation on current experience</h3>
-          <p>There wasn’t much bandwidth to weave research studies into the project timeline to gain customer insights. Fortunately, as address validation is a well-studied domain, I was able to find the North Star to critique the current design. My main references are Jakob Nielson’s usability heuristics and Baymard’s UX benchmark of 60 major e-commerce sites on address validator design.
-          </p>
+          <h3>The North Star - heuristics evaluation</h3>
+          <p>There wasn’t additional bandwidth to weave research studies into the timeline to gain customer insights on the current design. Fortunately, as address validation is a well-studied domain, I was able to find the North Star to base my critique on. My main references were Jakob Nielson’s usability heuristics and Baymard’s UX benchmark of 60 major ecommerce sites on designing for address validators.</p>
           <img src="avs/quote.jpg" class="img-responsive">
-          <p>At a high level, address validator is a checkout error message. We intervene customers for good, helping them understand the blocker and fix it as still in context. While the intent is on track, there’s space for design to be honed for a better user experience.
-          </p>
-          <h3>Current frictions</h3>
-          <p>We attempt to nudge customers to continue with a suggested address; however, the current flow lacks the “whys.” </p>
+          <p>At a high level, address validator is a type of error message. In general, our intent aligned with Jakob Nielson's principle on designing for error cases. The validator intervenes customers on a relevant timing to provide address suggestions to fix their address entry mistakes. After a heuristics evaluation and discussion with research and content strategy partners, I was able to identify the space to bring the current design to the next level.</p>
+        </div>
 
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Current design discrepancies</h3>
           <img src="avs/flow.jpg" class="img-responsive">
-
-          <p>1.	Message on the validator isn’t crystal clear to pinpoint the cause of this error.</p>
-          <p>2.	It’s hard to catch the discrepancies between entered and suggested addresses without making them all visible for side-by-side comparison. </p>
-          <p>3.	As there’s no guarantee for AVS to be error-less 100%, Baymard studies suggest it’s always helpful to allow customers to override the validator. Such a treatment is overlooked on the current design. Once a validator is triggered, there’re no shortcuts or options to continue with the entered address. The cancel button will bring back to the address entry form, but the validator will be triggered again with another “save address” attempt.</p>
-          <p>4.	On top of these, there’s space to polish the design layout, such as the repetitive CTAs and visual alignment in general.</p>
+          <p><strong>1. There’s the solution, but no explanations on the problem.</strong> We attempt to nudge customers to continue with a suggested address; however, the message on the validator doesn’t provide much context on the cause of this blocker and corresponding consequences of an invalid address.</p>
+          <p><strong>2. There’s no visibility of the entered address.</strong> It’s hard to catch the discrepancies between entered and suggested addresses, without aligning them together for side-by-side comparison.</p>
+          <p><strong>3. There’s no options to override the validator.</strong> Baymard’s UX benchmark suggests,  as there’s no guarantee for AVS to be 100% error-less, it's always helpful to allow customers to override the validator and continue with their entered address. Such a treatment is overlooked on the current design. The “cancel” button will bring back the address entry stage, but the same validator will be triggered again with another “save address” attempt.</p>
+          <p><strong>4. There’s space to bring the overall design to the next level</strong>, such as to fix the repetitive CTAs and visual alignment discrepancy.</p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Ideation</h3>
+          <p>I initiated lots of critique sessions with my design team and cross-functional partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          </p>
+          <img src="avs/ideation.jpg" class="img-responsive">
           <h3>Iterations & key design decisions</h3>
-          <p>As there’s no guarantee for AVS to be error-less 100%, Baymard studies suggest it’s always helpful to allow customers to override the validator. Such a treatment is overlooked on the current design. Once a validator is triggered, there’re no shortcuts or options to continue with the entered address. The cancel button will bring back to the address entry form, but the validator will be triggered again with another “save address” attempt.</p>
-          <img src="avs/test3.jpg" class="img-responsive">
+          <img src="avs/iteration.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Caveat & tradeoff</h3>
-          <p>When it comes to providing an outlet to edit entered address, there are different voices.</p>
-          <img src="avs/caveat.jpg" class="img-responsive">
+          <h3>Caveat</h3>
+          <p>After mapping out the checkout flow for both return and guest customers, a navigation inconsistency issue caught my eyes.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/nav_incon.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Final</h3>
-          <p>When it comes to providing an outlet to edit entered address, there are different voices.</p>
+          <h3>Further iterations</h3>
+          <img src="avs/iterations2.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Finalized buy-in solution</h3>
+          <p>Taking all into account, I had another round of design iteration and came up with a solution that got all the stakeholders on board. I proposed to turn the validator from an in-page component to a standalone modal. A modal simplifies the information hierarchy, which really helps to explain the complicated navigation logic between the main and sub checkout flows.
+          </p>
+          <img src="avs/final.jpg" class="img-responsive">
+        </div>
+
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Design specs for a shipped project</h3>
+          <p>Following the same design process, I was able to deliver detailed design specs for development. All use cases, all breakpoints, all platforms</p>
           <img src="avs/final.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Design specs</h3>
-          <p>When it comes to providing an outlet to edit entered address, there are different voices.</p>
-          <img src="avs/final.jpg" class="img-responsive">
+          <h3>Takeaway highlight from the project</h3>
+          <p>System column Following the same design process, I was able to deliver detailed design specs for development. All use cases, all breakpoints, all platforms. The design has just launched with an A/B testing in August.</p>
+          <img src="avs/quote.jpg" class="img-responsive">
         </div>
 
         <ul class="pager show-later">
@@ -131,7 +157,7 @@
             <a href="https://www.behance.net/xiaochenyu" class="fa fa-behance" target="_blank"></a>
             <a href="https://dribbble.com/xiaochenyu" class="fa fa-dribbble" target="_blank"></a>
           </div>
-          <p>Copyright &copy; Xiaochen Yu 2017 - 2019</p>
+          <p>Copyright &copy; Xiaochen Yu 2020</p>
 
           <div class="text-center">
             <button id="top" href="#content">TOP</a>
