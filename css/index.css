@@ -52,13 +52,13 @@ a:visited, a:focus {
 }
 
 #menu .nav li a.non-active:hover {
-  color: rgb(101, 52, 255);
+  color: rgb(27, 173, 204);
 }
 
 #menu .nav li a.active {
-  color: rgb(101, 52, 255);
+  color: rgb(27, 173, 204);
   font-weight: 500;
-  border-bottom: 2px solid rgb(101, 52, 255);
+  border-bottom: 2px solid rgb(27, 173, 204);
 }
 
 .navbar-nav>li>a {
@@ -93,7 +93,7 @@ a:visited, a:focus {
 
 
 .navbar-default .navbar-brand:hover {
-  color: rgb(101, 52, 255);
+  color: rgb(27, 173, 204);
   transition: 0.6s;
 }
 
