@@ -60,63 +60,62 @@
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Overview</h3>
-          <p>Price is one of the major factors for any purchase decision. According to Baymard's UX benchmark, when customers have a difficult time estimating what they will need to pay for their order in total, many will be reluctant to enter checkout flow.
+          <p>Price is one of the major factors for any purchase. According to Baymard's UX benchmark, when customers have a difficult time estimating what they will need to pay for their order in total, many will be reluctant to enter checkout flow.
           </p>
           <img src="tax/abandon.jpg" class="img-responsive">
-          <p>We keep transparent about the total cost of an order upfront before asking our customers to initiate checkout. On top of item subtotal, we disclose additional costs upfront, such as shipping, taxes, and fees, to help our customers make informed decisions and manage budgets easily. Yet from Voice of Customers data, we realized our customers have higher expectations on the accuracy of the cost revealed upfront. On the line for taxes and fees, we constantly display an amount, which can be different from what the customer will be eventually charged when their fulfillment address is confirmed during checkout. Before that tax call happens, the tax amount on POS is only an estimate, pure math, based on the IP Geotargeting or a manual zip code input. The line title is labeled as “taxes and fees,” but frankly any additional fees will not be disclosed until the tax call either.
+          <p>At Walmart.com, we are ahead of the game. We keep transparent about the total cost of an order upfront before asking our customers to initiate checkout. On top of item subtotal, we disclose additional costs upfront, such as shipping, taxes, and fees, to help our customers make informed decisions and manage budgets easily.
+          </p>
+          <p>
+          Yet from Voice of Customers data, we realized our customers have higher expectations on the accuracy of the cost revealed upfront. On the line for taxes and fees, we constantly display an amount, which can be different from what the customer will be eventually charged when their fulfillment address is confirmed during checkout. Before that tax call happens, the tax amount on POS is only an estimate, pure math, based on the IP Geotargeting or a manual zip code input. The line title is labeled as “taxes and fees,” but frankly any additional fees will not be disclosed until the tax call either.
           </p>
           <img src="tax/old.jpg" class="img-responsive">
+          <h3>Lifted performances with the new design</h3>
           <p>With that back-end logic in mind, we decided to improve the customer’s perception of trust by optimizing the discourse of taxes and fees during transaction. We explored designs to hide amount for taxes and fees before it’s calculated based on the fulfillment address. Back in October 2019, we rolled out an A/B test with the new approach and noticed a positive lift in GMV (+2.6%) and visitor conversion rate (+1.6%).
           </p>
           <img src="tax/new.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Usability gap</h3>
-          <p>Through a usability study, we learned the design decision can be further tweaked to better address customers’ mental modal.
+          <h3>Insights from usability study</h3>
+          <p>Through a usability study, customers understood that their delivery address would affect their taxes & fees and thus it would be finalized after they selected their delivery address. <strong>They also understood "--" meant that it was not yet calculated. </strong>However, we also learned our design decision can be further tweaked to better address customers’ mental modal.
+          </p>
           </p>
           <img src="tax/gap.jpg" class="img-responsive">
-          <p>Customers understood "--" meant that it was not yet calculated. However, customers were confused why Walmart cannot estimate the taxes and fees if they have a zip code to base it on. Customers initially thought that updating the zip would show them est. taxes & fees but then double guessed themselves as it currently doesn’t show an estimated amount.
-          </p>
-          <p><strong>1. There’s the solution, but no explanations on the problem.</strong> We attempt to nudge customers to continue with a suggested address; however, the message on the validator doesn’t provide much context on the cause of this blocker and corresponding consequences of an invalid address.</p>
-          <p><strong>2. There’s no visibility of the entered address.</strong> It’s hard to catch the discrepancies between entered and suggested addresses, without aligning them together for side-by-side comparison.</p>
+          <p><strong>Recommendation 1 - Remove the presence of zip code from the tax line.</strong> Customers believe all you need is a zip. They were confused why Walmart cannot estimate the taxes and fees if we have a zip code to base it on. They initially thought that updating the zip would show them est. taxes & fees but then double guessed themselves as it currently doesn’t show an estimated amount. </p>
+          <p><strong>Recommendation 2 - Scrutinize line title to help customers understand the exact amount for tax and fees. </strong>Customers were unsure why they are still estimated after the fulfillment address is confirmed. They wanted to know an exact amount they would be charged before submitting payment.</p>
           </p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Minimal impact of removing zipcode from POS</h3>
-          <p>There wasn’t additional bandwidth to weave research studies into the timeline to gain customer insights on the current design. Fortunately, as address validation is a well-studied domain, I was able to find the North Star to base my critique on. My main references were Jakob Nielson’s usability heuristics and Baymard’s UX benchmark of 60 major ecommerce sites on designing for address validators.</p>
+          <h3>Minimal impact of removing zip code from POS</h3>
+          <p>I worked with my product partner and understood the impact of removing the zip code link from POS would be minimal. The main use cases that customers would require an access to zip code during transaction flow have been handled explicitly. On top of that, a low click-through rate (CTR 2%) on the current POS zip code indicated a low possibility of causing frictions.
           <img src="tax/location.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Competitive analysis</h3>
-          <p>Before jumping into ideation, I did a competitive analysis on what ecommerce sites are </p>
+          <p>I learned from other competitors that it’s important to be mindful about guiding through customer’s expectations on tax and fees. Displaying a tax disclaimer is a widely adopted treatment to help elaborating on the invisibility of estimated tax and fees.
+          </p>
           <img src="tax/comp.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Ideation</h3>
-          <p>Option 1 - displaying inline partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          <p> Worked closely with content strategist and product manager...
           </p>
           <img src="tax/inline.jpg" class="img-responsive">
-          <p>I initiated lots of critique sessions with my design team and cross-functional partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          <p>Option 1
+          </p>
           <img src="tax/inline_remove.jpg" class="img-responsive">
-          <p>I initiated lots of critique sessions with my design team and cross-functional partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          <p>Option 2
+          </p>
           <img src="tax/flyout.jpg" class="img-responsive">
+          <p>Option 3
+          </p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Detail oriented</h3>
-          <p>After mapping out the checkout flow for both return and guest customers, a navigation inconsistency issue caught my eyes.</p>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="tax/nav_incon.jpg" class="img-responsive">
-        </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Further iterations</h3>
+          <h3>Further iterations on details</h3>
           <img src="tax/iterations2.jpg" class="img-responsive">
         </div>
 
@@ -126,7 +125,6 @@
           </p>
           <img src="tax/final.jpg" class="img-responsive">
         </div>
-
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Design specs for development</h3>
