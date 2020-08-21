@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Xiaochen Yu | User Experience and Product Design | Portfolio">
+    <meta name="keywords" content="Xiaochen Yu, Xiaochen Yu Design, Xiaochen Yu UX, Xiaochen Yu Product Design, Xiaochen Yu IUPUI, Xiaochen Yu Portfolio">
+    <meta name="author" content="Xiaochen Yu, Xiaochen Yu Design, Xiaochen Yu UX, 于晓辰">
+    <link rel="icon" href="images/favicon.png" type="image">
+    <title>Improving address validation experience for Walmart customers | Xiaochen Yu</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+    <!-- Animation template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Embed Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="wrap" class="row animated fadeIn">
+      <div id="content">
+        <div id="logo" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <a href="index.html">
+            <img src="images/icon.svg" width="52px">
+          </a>
+        </div>
+
+        <ul class="prev-next col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <li><a href="wom.html" class="fa fa-angle-right"></a><li>
+          <li><a href="veggiezens.html" class="fa fa-angle-left"></a><li>
+        </ul>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>
+            Improving address validation experience for Walmart customers
+          </h1>
+          <h2>
+            Shipped · End-to-end experience design · Responsive web · Native apps
+          </h2>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="intro col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h3>My role</h3>
+          <p>UI/UX designer - drove design from concept to launch</p>
+        </div>
+          <div class="intro col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h3>Cross-functional team</h3>
+          <p>Product Manager, Content Strategist, Design Researcher, team of Developers (iOS, Android, and Web), and support from design team</p>
+        </div>
+      </div>
+
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Overview</h3>
+          <p>As an ecommerce giant, Walmart.com adopts a robust delivery system as a pillar of the success of business. Leveraging address validation services (AVS), we are able to verify if an input from the customer matches an address on file. This has been an effective approach to avoid post-transaction frictions, such as delivery delays or undelivered orders.
+          </p>
+          <img src="avs/box.jpg" class="img-responsive">
+          <h3>Problem space</h3>
+          <p>Back in early 2020, analytical data indicated we still have a wiggling room. We’ve noticed 4% of adding address attempts resulted in an invalid address during checkout. On top of that, a noteworthy percentage of these invalidations implies a limited capability of the AVS. On the business side, we decided to upgrade our AVS license to raise the bar. To reach an experience parity, I worked with the cross-functional team to identify design opportunities to improve the address validation experience on Walmart.com.</p>
+          </p>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Scope & prioritization</h3>
+          <p>I did a comprehensive audit of all use cases to better understand the scope of this project. I learned there are 4 types of address validation scenarios implemented on the current site, with 80% as return customers and 20% as guests. Design specification wise, all platforms need to be taken care of - responsive web, iOS, and Android.</p>
+          <img src="avs/errors.jpg" class="img-responsive">
+          <p>Collaborated with product and engineer partners, I made a tangible plan to prioritize the design efforts on different use cases. Due to technical limitations, the outdated AVS can only surface out address suggestions when there are exactly 2 results on file. The rest, such as singular suggestion use cases, is buried in low confidence suggestion cases. With more accurate responses honored by the latest AVS, it’s a great opportunity to revamp a trustworthy customer experience with more solid and reliable address suggestions. Therefore, I decided to first dig into the use case with high confidence suggestions to maximize the opportunity for a customer experience 2.0.</p>
+          </p>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>The North Star - heuristics evaluation</h3>
+          <p>There wasn’t additional bandwidth to weave research studies into the timeline to gain customer insights on the current design. Fortunately, as address validation is a well-studied domain, I was able to find the North Star to base my critique on. My main references were Jakob Nielson’s usability heuristics and Baymard’s UX benchmark of 60 major ecommerce sites on designing for address validators.</p>
+          <img src="avs/quote.jpg" class="img-responsive">
+          <p>At a high level, address validator is a type of error message. In general, our intent aligned with Jakob Nielson's principle on designing for error cases. The validator intervenes customers on a relevant timing to provide address suggestions to fix their address entry mistakes. After a heuristics evaluation and discussion with research and content strategy partners, I was able to identify the space to bring the current design to the next level.</p>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Current design discrepancies</h3>
+          <img src="avs/flow.jpg" class="img-responsive">
+          <p><strong>1. There’s the solution, but no explanations on the problem.</strong> We attempt to nudge customers to continue with a suggested address; however, the message on the validator doesn’t provide much context on the cause of this blocker and corresponding consequences of an invalid address.</p>
+          <p><strong>2. There’s no visibility of the entered address.</strong> It’s hard to catch the discrepancies between entered and suggested addresses, without aligning them together for side-by-side comparison.</p>
+          <p><strong>3. There’s no options to override the validator.</strong> Baymard’s UX benchmark suggests,  as there’s no guarantee for AVS to be 100% error-less, it's always helpful to allow customers to override the validator and continue with their entered address. Such a treatment is overlooked on the current design. The “cancel” button will bring back the address entry stage, but the same validator will be triggered again with another “save address” attempt.</p>
+          <p><strong>4. There’s space to bring the overall design to the next level</strong>, such as to fix the repetitive CTAs and visual alignment discrepancy.</p>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Ideation</h3>
+          <p>I initiated lots of critique sessions with my design team and cross-functional partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          </p>
+          <img src="avs/ideation.jpg" class="img-responsive">
+          <h3>Iterations & key design decisions</h3>
+          <img src="avs/iteration.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Caveat</h3>
+          <p>After mapping out the checkout flow for both return and guest customers, a navigation inconsistency issue caught my eyes.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/nav_incon.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Further iterations</h3>
+          <img src="avs/iterations2.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Final solution</h3>
+          <p>Taking all into account, I had another round of design iteration and came up with a solution that got all the stakeholders on board. I proposed to turn the validator from an in-page component to a standalone modal. A modal simplifies the information hierarchy, which really helps to explain the complicated navigation logic between the main and sub checkout flows.
+          </p>
+          <img src="avs/final.jpg" class="img-responsive">
+        </div>
+
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>What's next</h3>
+          <p>I worked very closely with our engineering team to write specifications for the designs. I delivered a full stack of annotated design specs with 6 address validation use cases with 2 customer across responsive web and native apps. As a wrap, I contributed to the VQA session and identified several key front-end discrepancies before rolling out the new design. While this feature is being A/B tested, let’s stay tuned for the results and impact :)
+          </p>
+          <img src="avs/specs.jpg" class="img-responsive">
+        </div>
+
+        <ul class="pager show-later">
+          <li><a href="veggiezens.html"  class="fa fa-angle-left"></a></li>
+          <li><a href="wom.html" class="fa fa-angle-right"></a></li>
+        </ul>
+
+        <ul class="pager hide-later">
+          <li><a href="veggiezens.html" class="previous col-xs-12 col-sm-12 col-md-6 col-lg-6">Previous:<br/>Veggiezens</a></li>
+          <li><a href="wom.html" class="next col-xs-12 col-sm-12 col-md-6 col-lg-6">Next:<br/>W.O.M WeChat Mini-Program</a></li>
+        </ul>
+
+        <hr class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
+
+        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="social-media col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="mailto:xiaochenyu@yahoo.com" class="fa fa-envelope" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/xiaochenyu/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.behance.net/xiaochenyu" class="fa fa-behance" target="_blank"></a>
+            <a href="https://dribbble.com/xiaochenyu" class="fa fa-dribbble" target="_blank"></a>
+          </div>
+          <p>Copyright &copy; Xiaochen Yu 2020</p>
+
+          <div class="text-center">
+            <button id="top" href="#content">TOP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+  </body>
+</html>
