@@ -6,7 +6,7 @@ html,body {
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.8;
-  color: rgba(0,0,0);
+  color: #414042;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -134,8 +134,8 @@ a:visited, a:focus {
 
 /*font size*/
 h3 {
-  font-weight: 600;
-  font-size: 25pt;
+  font-weight: 400;
+  font-size: 20pt;
   line-height: 1.8;
 }
 
@@ -240,3 +240,14 @@ img {
     font-size: 18pt;
   }
 }
+
+.embed, .embed:hover {
+  text-decoration: underline;
+  color: #414042;
+  font-weight: 400;
+}
+
+.embed:visited, .embed:focus {
+  text-decoration: underline;
+  color: #414042;
+  font-weight: 400;

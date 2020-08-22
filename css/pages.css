@@ -20,12 +20,16 @@ html,body {
  /* link style*/
  a {
    text-decoration: none;
-   color: #181818;
+   font-weight: bold;
+   color: #414042;
  }
 
 a:hover {
   text-decoration: none;
+  color: #414042;
 }
+
+/*
 
 .link-black a {
   color: #181818;
@@ -39,7 +43,7 @@ a:hover {
 .link-black a:visited {
   color: #181818;
 }
-
+*/
 
 /*headings style*/
  h1, h2 {
@@ -428,4 +432,18 @@ a:visited, a:focus {
 .intro {
   padding-left: 0;
   padding-right: 0;
+}
+
+/*inline link*/
+
+.embed, .embed:hover {
+  text-decoration: underline;
+  color: #414042;
+  font-weight: 400;
+}
+
+.embed:visited, .embed:focus {
+  text-decoration: underline;
+  color: #414042;
+  font-weight: 400;
 }
