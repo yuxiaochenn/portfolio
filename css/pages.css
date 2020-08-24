@@ -447,3 +447,7 @@ a:visited, a:focus {
   color: #414042;
   font-weight: 400;
 }
+
+.figure {
+  font-size: 10pt;
+}
