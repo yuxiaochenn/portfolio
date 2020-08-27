@@ -333,7 +333,7 @@ a:visited, a:focus {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 33pt;
+    font-size: 20pt;
     line-height: 1.5;
   }
 
@@ -349,7 +349,7 @@ a:visited, a:focus {
   }
 
   h4 {
-    font-size: 13pt;
+    font-size: 14pt;
     line-height: 1.5;
   }
 
@@ -462,10 +462,9 @@ a:visited, a:focus {
     padding-right: 0;
   }
 
-  .grids {
+  .zero {
     padding-left: 2%;
     padding-right: 2%;
   }
-
 
 }
