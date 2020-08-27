@@ -367,15 +367,6 @@ a:visited, a:focus {
   }
 }
 
-@media (max-width: 376px) {
-  .right, .left {
-    float: none;
-  }
-
-  .fa {
-    width: 50px;
-  }
-}
 
 /*REI FIT page*/
 .p-i {
@@ -450,4 +441,31 @@ a:visited, a:focus {
 
 .figure {
   font-size: 10pt;
+}
+
+.shrink {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media (max-width: 414px) {
+  .right, .left {
+    float: none;
+  }
+
+  .fa {
+    width: 50px;
+  }
+
+  .shrink {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .grids {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+
 }
