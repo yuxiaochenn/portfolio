@@ -21,7 +21,7 @@
     <!-- Embed Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -40,101 +40,141 @@
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1>
-            Improving address validation experience for Walmart customers
+            Improving Address Validation Experience for Walmart Customers
           </h1>
           <h2>
-            Shipped Project · End-to-End Experience Design · Responsive Web · Native Apps
+            Shipped Project · End-to-End Experience Design · Native Apps · Responsive Web
           </h2>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="intro col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h3>My Role</h3>
-          <p>UI/UX designer - drove design from concept to launch</p>
+            <img src="avs/cover.jpg" class="img-responsive" >
         </div>
-          <div class="intro col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h3>Cross-functional Team</h3>
-          <p>Product Manager, Content Strategist, Design Researcher, team of Developers (iOS, Android, and Web), and support from design team</p>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>My Role</h3>
+          <ul>
+            <li>Drove UI/UX design from concept to launch</li>
+            <li>Cross-functional collaboration with Product Manager, Content Strategist, Design Researcher, and a team of Developers (iOS, Android, and Web)</li>
+          </ul>
         </div>
       </div>
 
-
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Overview</h3>
-          <p>As an ecommerce giant, Walmart.com adopts a robust delivery system as a pillar of the success of business. Leveraging address validation services (AVS), we are able to verify if an input from the customer matches an address on file. This has been an effective approach to avoid post-transaction frictions, such as delivery delays or undelivered orders.
-          </p>
-          <img src="avs/box.jpg" class="img-responsive">
-          <h3>Problem & Opportunity</h3>
-          <p>Back in early 2020, analytical data indicated we still have a wiggling room. We’ve noticed 4% of adding address attempts resulted in an invalid address during checkout. On top of that, a noteworthy percentage of these invalidations implies a limited capability of the AVS. On the business side, we decided to upgrade our AVS license to raise the bar. To reach an experience parity, I worked with the cross-functional team to identify design opportunities to improve the address validation experience on Walmart.com.</p>
+        <h3>Overview</h3>
+          <p>
+            Walmart.com uses an address verification service (AVS) to ensure our customer’s entered address is registered with major shipping carriers. The system prompts address suggestions when there are strong matches to an invalid input, aiming to minimize customer’s interaction costs in transaction and reduce checkout abandonment.
           </p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Scope</h3>
-          <p>I did a comprehensive audit of all use cases to better understand the scope of this project. I learned there are 4 types of address validation scenarios implemented on the current site, with 80% as return customers and 20% as guests. Design specification wise, all platforms need to be taken care of - responsive web, iOS, and Android.</p>
-          <img src="avs/errors.jpg" class="img-responsive">
-          <h3>Prioritization</h3>
-          <p>Collaborated with product and engineer partners, I made a tangible plan to prioritize the design efforts on different use cases. Due to technical limitations, the outdated AVS can only surface out address suggestions when there are exactly 2 results on file. The rest, such as singular suggestion use cases, is buried in low confidence suggestion cases. With more accurate responses honored by the latest AVS, it’s a great opportunity to revamp a trustworthy customer experience with more solid and reliable address suggestions. <strong>Therefore, I decided to first dig into the use case with high confidence suggestions to maximize the opportunity for a customer experience 2.0.</strong></p>
+          <h3>Red Flags</h3>
+          <p>
+            Through secondary research (<a class="embed" href="https://baymard.com/checkout-usability/benchmark/step-type/address-validator" target="_blank">Baymard report</a>) and guerrilla testing, we found the existing design generated experience friction. The validator lacks 1) clarification of error cause and 2) options to override incorrect AVS responses if applicable.
           </p>
         </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>The North Star - Heuristics Evaluation</h3>
-          <p>There wasn’t additional bandwidth to weave research studies into the timeline to gain customer insights on the current design. Fortunately, as address validation is a well-studied domain, I was able to find the North Star to base my critique on. My main references were <a class="embed" href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Jakob Nielsen’s 10 Usability Heuristics for User Interface Design</a> and <a class="embed" href="https://baymard.com/checkout-usability/benchmark/step-type/address-validator" target="_blank">Baymard’s UX benchmark</a> of 60 major ecommerce sites on designing for address validators.</p>
-          <img src="avs/quote.jpg" class="img-responsive">
-          <p>At a high level, address validator is a type of error message. In general, our intent aligned with Jakob Nielsen's principle on designing for error cases. The validator intervenes customers on a relevant timing to provide address suggestions to fix their address entry mistakes. After a heuristics evaluation and discussion with research and content strategy partners, I was able to identify the space to bring the current design to the next level.</p>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/problem.jpg" class="img-responsive">
         </div>
 
+
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Current Design Discrepancies</h3>
+          <h3>Re-design Goals</h3>
+          <p>
+            With an AVS upgrade, the false positive rate dropped significantly, which was a technical backbone to consolidate my design goals to reduce customers' validation efforts.
+          </p>
+          <ul>
+            <li>Use affordance to prompt using a suggested address</li>
+            <li>Craft a clear CTA narrative for editing the entered address</li>
+            <li>Provide an edge case outlet for using the entered address</li>
+            <li>Refine design and copy to clarify error cause and recommended solutions</li>
+          </ul>
+          <h4>Refined workflow</h4>
           <img src="avs/flow.jpg" class="img-responsive">
-          <p><strong>1. There’s the solution, but no explanations on the problem.</strong> We attempt to nudge customers to continue with a suggested address; however, the message on the validator doesn’t provide much context on the cause of this blocker and corresponding consequences of an invalid address.</p>
-          <p><strong>2. There’s no visibility of the entered address.</strong> It’s hard to catch the discrepancies between entered and suggested addresses, without aligning them together for side-by-side comparison.</p>
-          <p><strong>3. There’s no options to override the validator.</strong> Baymard’s UX benchmark suggests,  as there’s no guarantee for AVS to be 100% error-less, it's always helpful to allow customers to override the validator and continue with their entered address. Such a treatment is overlooked on the current design. The “cancel” button will bring back the address entry stage, but the same validator will be triggered again with another “save address” attempt.</p>
-          <p><strong>4. There’s space to bring the overall design to the next level</strong>, such as to fix the repetitive CTAs and visual alignment discrepancy.</p>
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Ideation</h3>
-          <p>I initiated lots of critique sessions with my design team and cross-functional partners to capture their feedback during the ideation and iteration. These syncs really helped me to grow as a designer, learning from the team, speaking up for my design decisions, and pushing back as a UX advocate.
+          <h3>Iterations</h3>
+          <h4>Key Design Decisions</h4>
+          <p>
+            I iterated designs based on critiques from cross-functional partners and proposed a version got buy-in from the team. Key decisions included placement of the entered address, CTA patterns, and copy updates.
           </p>
-          <img src="avs/ideation.jpg" class="img-responsive">
-          <h3>Iterations & Key Design Decisions</h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <img src="avs/iteration.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Use Case Caveat</h3>
-          <p>After mapping out the checkout flow for both return and guest customers, a navigation inconsistency issue caught my eyes.</p>
+          <h4>Signed-in Customer Address Validation Flow</h4>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="avs/nav_incon.jpg" class="img-responsive">
+          <img src="avs/refined.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Further Iterations</h3>
-          <img src="avs/iterations2.jpg" class="img-responsive">
-        </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Final Solution</h3>
-          <p>Taking all into account, I had another round of design iteration and came up with a solution that got all the stakeholders on board. I proposed to turn the validator from an in-page component to a standalone modal. A modal simplifies the information hierarchy, which really helps to explain the complicated navigation logic between the main and sub checkout flows.
+          <h3>Caveat</h3>
+          <p>
+            I realized the proposed validator wasn’t the perfect fit for the guest customer scenario, which’s a 10% business segment. As the validator overwrote the previous form and its affiliated CTA, the main navigation became out of sight, which broke the key pattern consistency in the accordion-style checkout.
           </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/flow1.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Re-iteration</h3>
+          <h4>User Flows for Signed-in and Guest Customer</h4>
+          <p>
+            To avoid sowing the seeds of violating the design pattern, I mapped out the complete user flows to keep track of navigation patterns in main flow, sub flow, and validation error flow.
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a href="avs/flow2.jpg" target="_blank"><img src="avs/flow2.jpg" class="img-responsive"></a>
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h4>Explorations</h4>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/reiteration.jpg" class="img-responsive">
+        </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>One-Size-Fits-All Solution</h3>
+          <p>
+            My final design turned the validator from an in-page component into a full-page modal, which solved the navigation knot with a scalable solution. We also learned from guerrilla testing that it's the right track for bringing our customers’ address validation experience to the next level.
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <img src="avs/final.jpg" class="img-responsive">
         </div>
 
-
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Team Collaboration Made it Happen</h3>
-          <p>There was lots of effort behind the scenes to deliver end-to-end designs for <a class="embed" href="avs/AVS_design_doc.png" target="_blank">all use cases across different platforms</a> within a tight timeline. I worked very closely with our content strategist on crafting a friendly tone for our customers. <a class="embed" href="avs/content.jpg" target="_blank"><strong>(Check out an example of my working file for collaborating with content!)</strong></a>
-            On top of that, I collaborated with our engineering team on design specifications deliverables and contributed to visual quality assurance (VQA) with a keen eye for details before project rolled out.
+          <h4>Cross Platform Designs</h4>
+          <p>
+            For the final handoff, I was able to use the established design systems to deliver cross-platform designs to engineers within a quick turnover. 
           </p>
-          <a href="avs/specs.jpg" target="_blank"><img src="avs/specs.jpg" class="img-responsive"></a>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="avs/platforms.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          While this feature is being A/B tested, let’s stay tuned for the results and impact :)
+          <h3>What I learned</h3>
+          <p>
+            Efforts behind the scene were incredible for the amount we’ve accomplished within a tight timeline. My biggest takeaway was zig zag turns are normal and insistence for customer experience is key to raise the bar for design.
+          </p>
+          <h4>Impact</h4>
+          <p>
+            While this feature is being A/B tested, learnings from the process identified many opportunities to be weaved into the roadmap to improve the checkout experience for our 100+ million monthly active customers.
+          </p>
         </div>
 
         <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
