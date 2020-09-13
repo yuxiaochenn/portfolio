@@ -175,15 +175,15 @@ figcaption:hover {
 figcaption h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 26pt;
+  font-size: 23pt;
   line-height: 1.6;
   color: #181818;
   text-align: center;
 }
 
 figcaption h4 {
-  font-size: 16pt;
-  font-weight: 400;
+  font-size: 14pt;
+  font-weight: 500;
   line-height: 1.6;
   color: #181818;
   text-align: center;
@@ -191,14 +191,14 @@ figcaption h4 {
 
 figcaption p {
   text-align: center;
-  font-size: 16pt;
+  font-size: 14pt;
   color: rgb(27, 173, 204);
 }
 
 
 section h4 {
-  font-weight: 600;
-  font-size: 20pt;
+  font-weight: 500;
+  font-size: 16pt;
   color: #181818;
 }
 
@@ -224,7 +224,6 @@ section h4 {
 }
 
 .footer p {
-  font-weight: 300;
   font-size: 12pt;
   letter-spacing: 1pt;
   padding-top: 2%;
