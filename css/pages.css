@@ -443,7 +443,8 @@ a:visited, a:focus {
 }
 
 .figure {
-  font-size: 10pt;
+  font-size: 13pt;
+  text-align: center;
 }
 
 .shrink {
