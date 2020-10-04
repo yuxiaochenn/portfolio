@@ -9,7 +9,7 @@
     <meta name="keywords" content="Xiaochen Yu, Xiaochen Yu Design, Xiaochen Yu UX, Xiaochen Yu Product Design, Xiaochen Yu IUPUI, Xiaochen Yu Portfolio">
     <meta name="author" content="Xiaochen Yu, Xiaochen Yu Design, Xiaochen Yu UX, 于晓辰">
     <link rel="icon" href="images/favicon.png" type="image">
-    <title>Optimizing Disclosure on Tax and Fees for Walmart Customers | Xiaochen Yu</title>
+    <title>Optimizing Disclosure on Estimated Taxes and Fees for Walmart Customers | Xiaochen Yu</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -40,7 +40,7 @@
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1>
-            Optimizing Disclosure on Tax and Fees for Walmart Customers
+            Optimizing Disclosure on Estimated Taxes and Fees for Walmart Customers
           </h1>
           <h2>
             Shipped Project · End-to-End Experience Design · Responsive Web · Native Apps
@@ -57,75 +57,80 @@
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Overview</h3>
-          <p>Price is one of the major factors for any purchase. According to <a class="embed" href="https://baymard.com/lists/cart-abandonment-rate" target="_blank">Baymard's UX benchmark</a>, when customers have a difficult time estimating the total cost on their order, many will be reluctant to enter checkout flow.</p>
-          <img src="tax/abandon.jpg" class="img-responsive">
-          <h4>Opportunity Space</h4>
           <p>
-            Walmart.com is transparent about the total cost of an order upfront, such as shipping, taxes and fees, to help our customers make informed decisions and manage budgets easily.
-            Yet from Voice of Customers data, we realized our customers have higher expectations on the accuracy of the cost revealed upfront.
+            Walmart.com displays an estimated amount of taxes and fees in purchase order summary (POS) as a heads-up to help customers manage budget on the total cost of their order during transaction. However, sales tax and associated fees depend on more factors than a Geotargeted zip code; therefore the accurate amount will only be calculated with a confirmed fulfillment address.
+          </p>
+          <p>
+            <strong>To improve the customer’s perception of trust, we optimized the disclosure of taxes and fees by hiding the estimated amount before the tax call.</strong>
           </p>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="tax/old.jpg" class="img-responsive">
+          <img src="tax/hide-tax.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Problem & Opportunity</h3>
+          <h3>Red Flag on Existing Design</h3>
           <p>
-
-            In purchase order summary (POS), we constantly display an estimated amount for taxes and fees, which can be different (7% of the time) from what the customer will be eventually charged when their fulfillment address is confirmed during checkout. Before that tax call happens, the tax amount on POS is only a pure calculation based on the IP Geotargeting or a manual zip code input, in which sales tax depends on more factors including item types, assortment, etc. On top of that, the line title is labeled as “taxes and fees,” but frankly any additional fees will not be disclosed until the tax call happens.
+            Although we noticed positive lift in GMV and conversion rate during an A/B testing, there’s space for further improvement on the usability.
           </p>
-          <h3>Lifted Performances with a Design Twist</h3>
-          <p>With that back-end logic in mind, we decided to improve the customer’s perception of trust by optimizing the discourse of taxes and fees during transaction. <strong>We explored designs to hide amount for taxes and fees before it’s calculated based on the fulfillment address.</strong> Back in October 2019, we rolled out an A/B test with the new approach and noticed a positive lift in GMV (+2.6%) and visitor conversion rate (+1.6%).
+          <h4>Presence of Zip Code with Estmated Tax Hidden</h4>
+          <p>With a zip code attached to the tax line, customers believed that's all needed to estimate their sales taxes and fees.
+              They were confused why it's hidden, especially given the capability to manually update the zip code.
           </p>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="tax/new.jpg" class="img-responsive">
-        </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Space for Further Improvement</h3>
-          <p>Through a usability study, customers understood that their delivery address would affect their taxes & fees and thus it would be finalized after they selected their delivery address. <strong>They also understood "--" meant that it was not yet calculated. </strong>However, we also learned our design decision can be further tweaked to better address customers’ mental modal.
-          </p>
           <img src="tax/gap.jpg" class="img-responsive">
-          <h4>Recommendation 1 - Remove the presence of zip code from the tax line.</h4>
-          <p>Customers believe all you need is a zip. They were confused why Walmart cannot estimate the taxes and fees if we have a zip code to base it on. They initially thought that updating the zip would show them est. taxes & fees but then double guessed themselves as it currently doesn’t show an estimated amount. </p>
-          <h4>Recommendation 2 - Scrutinize line title to help customers understand the exact amount for tax and fees.</h4>
-          <p>Customers were unsure why they are still estimated after the fulfillment address is confirmed. They wanted to know an exact amount they would be charged before submitting payment.</p>
+        </div>
+
+
+      <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Learnings from Other eCommerce Apps</h3>
+        <ul>
+          <li>
+            When a site decides to hide estimated tax before it's finalized, a common approach is to remove the sense of location from POS.
+          </li>
+          <li>
+            To clarify the intention of hiding estimated tax, attaching a disclaimer to POS is a widely adopted approach.
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <img src="tax/comp.jpg" class="img-responsive">
+      </div>
+
+      <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      </div>
+
+      <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Evaluating the Impact of Removing Zip Code Link</h3>
+        <p>
+          Before jumping directly into design, I conducted a use case audit and confirmed the impact of removing zip code from the transaction flow would be minimal. On top of a low CTR on the zip code link in POS, the main use cases required location update to proceed transaction have been handled explicitly in the existing design.
+        </p>
+        </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <img src="tax/location.jpg" class="img-responsive">
+      </div>
+
+        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Design Explorations on Disclaimer Displacement</h3>
+          <p>
+            I explored multiple options to display the disclaimer in POS to communicate when taxes and fees will be disclosed.
+            We decided to move forward with attaching a disclaimer to the tax line, with a certainty of customers' understanding of "- -" and lowered interaction cost.
           </p>
         </div>
 
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h4>Minimal Impact of Removing Zip Code from POS</h4>
-          <p>I worked with my product partner and understood the impact of removing the zip code link from POS would be minimal. The main use cases that customers would require an access to zip code during transaction flow have been handled explicitly. On top of that, a low click-through rate (CTR 2%) on the current POS zip code indicated a low possibility of causing frictions.
-          <img src="tax/location.jpg" class="img-responsive">
-        </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Competitive Analysis</h3>
-          <p>I learned from other competitors that it’s important to be mindful about guiding through customer’s expectations on tax and fees. Displaying a tax disclaimer is a widely adopted treatment to help elaborating on the invisibility of estimated tax and fees.
-          </p>
-          <img src="tax/comp.jpg" class="img-responsive">
-        </div>
-
-        <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>Ideation & Iterations</h3>
-          <p>Knowing we are designing for time-sensitive busy families at Walmart, the key design principles I followed for displaying the tax disclaimer were discoverability and clarity. I iterated on several design options and was able to identify the rationales for each approach.
-          </p>
-          <p><strong>Option 1 - Attaching an inline disclaimer for tax and fees</strong></p>
-          <img src="tax/1.jpg" class="img-responsive">
-          <p><strong>Option 2 - Removing tax (and fees) line from POS, elaborating on order total line</strong></p>
-          <img src="tax/2.jpg" class="img-responsive">
-          <p><strong>Option 3 - Displaying tax (and fees) disclaimer as a flyout</strong></p>
-          </p>
-          <img src="tax/3.jpg" class="img-responsive">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="tax/iteration.jpg" class="img-responsive">
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Final Solution</h3>
-          <p>Worked closely with the content strategist, design researcher and product manager, I was able to propose a well-thought-out solution that fits in all use cases. To balance all the considerations and trade-offs, we decided to move forward with displaying an inline disclaimer with dynamic messages to address the different stages during transaction flow.
+          <p>I worked with our content strategist to make the disclaimer message more explicit with end-to-end transaction flows mapped out.
+            The final solution got buy-in from cross-functional team successfully.
           </p>
         </div>
 
@@ -134,11 +139,14 @@
         </div>
 
         <div class="grids col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h3>What I've Learned</h3>
-          <p>I never thought working on a project with such a small scope would be this rewarding. From pixels and font sizes to choose every single word, I truly realized the incredible efforts need to be weaved into a thoughtful design decision to bring a solid checkout experience to our 100+ million monthly active customers.
+          <h3>What I learned</h3>
+          <h4>The Impact</h4>
+          <p>
+            In April 2020, we ran an A/B test to hide estimated taxes and fees with a disclaimer, and saw significant gains; +1.6% growith in visitor conversion and +2.6% growth in GMV.
           </p>
           <img src="tax/quote.jpg" class="img-responsive">
-          <p>While this feature is being A/B tested, let’s stay tuned for the results and impact :)</p>
+          <p>I never thought working on a project with such a small scope would be this rewarding. From pixels and font sizes to choose every single word, I truly realized the incredible efforts need to be weaved into a thoughtful design decision to bring a solid checkout experience to our 100+ million monthly active customers.
+          </p>
         </div>
 
         <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
