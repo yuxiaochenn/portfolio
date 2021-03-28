@@ -6,7 +6,7 @@ html,body {
   font-size: 16pt;
   font-weight: 400;
   line-height: 1.8;
-  color: #59616C;
+  color: #181818;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -21,12 +21,12 @@ html,body {
  a {
    text-decoration: none;
    font-weight: bold;
-   color: #59616C;
+   color: #181818;
  }
 
 a:hover {
   text-decoration: none;
-  color: #59616C;
+  color: #181818;
 }
 
 /*
@@ -435,13 +435,13 @@ a:visited, a:focus {
 
 .embed, .embed:hover {
   text-decoration: underline;
-  color: #414042;
+  color: #181818;
   font-weight: 400;
 }
 
 .embed:visited, .embed:focus {
   text-decoration: underline;
-  color: #414042;
+  color: #181818;
   font-weight: 400;
 }
 
