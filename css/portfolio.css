@@ -424,6 +424,10 @@ a:visited, a:focus {
     line-height: 36px
   }
 
+  .footer-icon {
+    padding-left: 6px;
+  }
+
 
 }
 
