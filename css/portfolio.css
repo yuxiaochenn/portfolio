@@ -401,9 +401,9 @@ a:visited, a:focus {
   }
 
   .badge {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
-    padding: 8px;
+    padding: 10px;
   }
 
   #menu {
