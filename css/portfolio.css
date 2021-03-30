@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-size: 24px;
   line-height: 31px;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 
 h3 {
@@ -67,6 +67,7 @@ h4 {
   display: inline-block;
   min-width: 10px;
   padding: 12px;
+  margin-top: 8px;
   font-size: 17px;
   font-weight: 400;
   line-height: 1;
@@ -104,6 +105,8 @@ h4 {
 
 .btn:hover {
   color: white;
+  background-color: grey;
+  transition-duration: 0.3s;
 }
 
 .btn:focus {
@@ -126,30 +129,36 @@ h4 {
 #menu {
   padding-right: 0;
   padding-left: 0;
-  margin-bottom: 0;
 }
 
 #menu .nav li a {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   color: #181818;
+  margin-left: 30px;
+  padding-top: 18px;
   text-decoration: none;
   position: relative;
 }
 
+#menu .nav li a:hover {
+  color: grey;
+  transition-duration: 0.3s;
+}
+
 #menu .nav li a.active {
   color: #181818;
+  font-weight: 600;
   border-bottom: 2px solid #181818;
 }
 
 .navbar-nav>li>a {
     padding: 0px;
     padding-bottom: 4px;
-    margin: 1vw;
 }
 
 .nav {
-  padding: 1vw;
+  padding: 0;
   margin-right: 0;
 }
 
@@ -300,6 +309,11 @@ a:visited, a:focus {
   float: right;
 }
 
+.footer-icon:hover {
+  opacity: 50%;
+  transition-duration: 0.3s;
+}
+
 /*Responsive style*/
 @media (min-width: 2112px) {
   #wrap {
@@ -313,10 +327,19 @@ a:visited, a:focus {
 }
 
 @media (max-width: 834px) {
+
+
+  html, body {
+    border: 1px solid #181818;
+  }
+
+
   #wrap {
     margin-left: 11%;
     margin-right: 11%;
   }
+
+
 
   h1 {
     font-size: 30px;
@@ -335,9 +358,18 @@ a:visited, a:focus {
 
 
 @media (max-width: 428px) {
+
+  html, body {
+    border: 2px solid transparent;
+  }
+
   #wrap {
     margin-left: 7%;
     margin-right: 7%;
+  }
+
+  .col-1 {
+    padding-right: 0;
   }
 
   h1 {
@@ -354,6 +386,19 @@ a:visited, a:focus {
     font-size: 16px;
     line-height: 22px;
   }
+
+  .btn {
+    width: 100%;
+  }
+
+  #menu {
+    margin-right: -16px;
+  }
+
+  #menu .nav li a.active {
+    border-bottom: 0;
+  }
+
 
 }
 
