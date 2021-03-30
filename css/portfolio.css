@@ -379,7 +379,8 @@ a:visited, a:focus {
   }
 
   h2 {
-
+    font-size: 20px;
+    line-height: 28px;
   }
 
   h3 {
@@ -413,8 +414,14 @@ a:visited, a:focus {
     border-bottom: 0;
   }
 
+  .footer {
+    border-top: 0.4px solid #474747;
+    padding-top: 12px;
+  }
+
   .footer-text {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 36px
   }
 
 
