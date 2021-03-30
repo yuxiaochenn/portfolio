@@ -405,6 +405,9 @@ a:visited, a:focus {
     padding: 8px;
   }
 
+  #menu {
+    margin-right: -6px;
+  }
 
   #menu .nav li a.active {
     border-bottom: 0;
