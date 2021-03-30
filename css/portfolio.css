@@ -364,8 +364,8 @@ a:visited, a:focus {
   }
 
   #wrap {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   .col-1 {
@@ -373,8 +373,8 @@ a:visited, a:focus {
   }
 
   h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 32px;
     margin-bottom: 15px;
   }
 
@@ -387,8 +387,22 @@ a:visited, a:focus {
     line-height: 22px;
   }
 
+  h4 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
   .btn {
     width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 8px 30px;
+  }
+
+  .badge {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px;
   }
 
   #menu {
