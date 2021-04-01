@@ -359,6 +359,11 @@ a:visited, a:focus {
     border-bottom: 0;
   }
 
+  .col {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+
   h1 {
     font-size: 27px;
     line-height: 36px;
