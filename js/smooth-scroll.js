@@ -1,7 +1,7 @@
 $(document).on('click', '#top', function(evt) {
     if(evt.target.hash !== '') {
         $('html, body').animate({
-          scrollTop: $( "#content").offset().top - 130
+          scrollTop: $( "#wrap").offset().top - 130
         }, 800);
         return false;
     }
